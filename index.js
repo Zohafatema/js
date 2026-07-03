@@ -72,6 +72,7 @@
 // console.log(user);
 
 // // Function 
+// function
 // let s = function add(){
 //     console.log("Hello");
 // }
