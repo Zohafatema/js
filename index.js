@@ -188,3 +188,56 @@
 // console.log(NaN == NaN);
 
 // for loop
+
+// post increament
+// post decreament
+
+// for(let i = 0; i<10; i++){
+//     console.log(i);
+// }
+
+// // while loop
+// let i = 0;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+
+// // do while 
+// let i = 0;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i<10);
+
+// if else condition
+
+// let age = 15;
+
+// if(age>=18){
+//     console.log("Eligible for vote")
+// }
+// else{
+//     console.log("Not eligible for vote")
+// }
+
+// jab multiple condition likhni hoti h
+// to usme ek hi if or ek hi else hoga else if kitni bhi bar use kr skte ho
+// kid young old
+
+// let age = 20;
+
+// if(age<18){
+//     console.log("kid");
+// }
+// else if(age>=60){
+//     console.log("old");
+// }
+// else{
+//     console.log("young");
+// }
+
+
+// Logical operator
+
+// &&, ||
