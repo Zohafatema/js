@@ -5,6 +5,8 @@
 // let age = 25;0
 // console.log("name , age")
 
+const { use } = require("react");
+
 // const
 // const account = 1234;
 
@@ -240,4 +242,66 @@
 
 // Logical operator
 
-// &&, ||
+// && , ||
+
+// Logical && -->   dono conditions true honi chahiye tab hi true answer ayega 
+
+// console.log(true&&true);--> true
+// console.log(true&&false);--> false
+// console.log(false&&false);--> false
+// console.log(false&&true);--> false
+
+// Logical || --> kam se kam ek true honi chahiye tab hi answer true ayega or jab dono condition false ho to answer false hi ayega
+
+// console.log(true||true);--> true
+// console.log(true||false);--> false
+// console.log(false||false);--> false
+// console.log(false||true);--> false
+
+// Logical && And
+
+// let a = "Rohit";
+// let b = "";
+// let c = a&&b;
+// console.log(c);
+
+// let a = 0;
+// b = 20;
+
+// console.log(a&&b);
+// &&: If first value is false, it will return the first value itself
+// If first value is true, it will return second value
+
+
+// Logical || Or
+
+// let a = 10;
+// let b = 20;
+
+// console.log(a||b);
+// ||: If first value is true, it will return the first value itself
+// If first value is true, it will return sencond
+
+
+// != Not Equal
+// console.log(4!=5); ---> true
+// console.log(5!=5); ---> false
+
+
+
+// String
+// const str1 ="Rohit";
+// const str2 ='Rohit Negi';
+// const str3 =`Strike is coming soon`;---> max use
+
+// const day = 18;
+// const str3 = `Strike is coming on ${day}`;---> yaha ${day} day=18 add krne use hua mtlb day ki value ayegi output me.
+
+// console.log(str3);
+
+// const str = `Hello Coder Army`;
+// console.log(str.length);--> string ki lenght means isme kitne character h jaise yaha 16 h length me space bhi count hoga.
+
+// console.log(str[0]);--> single character access krne ke liye yaha index level ke hisab se character ki value ayegi
+
+
