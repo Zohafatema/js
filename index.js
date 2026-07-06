@@ -5,7 +5,6 @@
 // let age = 25;0
 // console.log("name , age")
 
-const { use } = require("react");
 
 // const
 // const account = 1234;
@@ -302,6 +301,36 @@ const { use } = require("react");
 // const str = `Hello Coder Army`;
 // console.log(str.length);--> string ki lenght means isme kitne character h jaise yaha 16 h length me space bhi count hoga.
 
-// console.log(str[0]);--> single character access krne ke liye yaha index level ke hisab se character ki value ayegi
+// console.log(str[0]);--> single character access krne ke liye yaha index level ke hisab se character ki value ayegi.
+
+// str[2] = "s";
+// console.log(str);-->  yaha index level 2 me wahi rahega jo tha s nhi ayega
 
 
+
+// // Upper Case
+// console.log(str.toUpperCase())---> puri line capital ho jayegi/ ye original string ko change nhi karega qki strings immutable hoti hi agr return value store nhi kroge to koi effect nhi dkhega
+// str.toUpperCase();
+// console.log(str);
+
+// const a = str.toUpperCase();--->  ek new uppercase string return krega jaise a me store karege to uppercase value milegi original string waise hi rahegi
+// console.log(a);
+
+// jaise uppercase use hota h waise hi lower case bhi use hoga
+
+// // Lower Case
+// const b = str.toLowerCase();
+// console.log(a);
+
+
+//substring 
+
+// const str = `Hello Coder Army`;
+
+// console.log(str.indexof('cod'));--->
+// // index me ye word kaha konse index pr h wo show karega ke ye index me kaha konse number pr h /pura word ek sath hona chahiye ek sath nhi milta h to -1 return krke de deta h
+// //searched character ya word ka starting index return krta h agr value na mile to -1 return krta h
+
+const str = `Hello Coder Army Coder`;
+
+console.log(str.lastindexof('cod')); 
