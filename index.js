@@ -62,7 +62,8 @@
 // let arr =[10, 11, "anjali", true];
 // console.log(arr);
 
-// // Object
+// // Objects 
+// objects mutable hote h means unke andr ki value ko change kr skte h
 // let user = {
 //     name:"anjali",
 //     account:1234,
@@ -288,7 +289,7 @@
 
 
 
-// String
+// STRING
 // const str1 ="Rohit";
 // const str2 ='Rohit Negi';
 // const str3 =`Strike is coming soon`;---> max use
@@ -326,11 +327,124 @@
 //substring 
 
 // const str = `Hello Coder Army`;
-
+// indexOf:
 // console.log(str.indexof('cod'));--->
 // // index me ye word kaha konse index pr h wo show karega ke ye index me kaha konse number pr h /pura word ek sath hona chahiye ek sath nhi milta h to -1 return krke de deta h
 // //searched character ya word ka starting index return krta h agr value na mile to -1 return krta h
 
-const str = `Hello Coder Army Coder`;
+// const str = `Hello Coder Army Coder`;
+// lastIndexOf
+// console.log(str.lastIndexOf('Cod'));--->  agr Cod multiple jageh pr present raha lekin apne ko last wala chahiye to konse index pr present h wo return karega.
 
-console.log(str.lastindexof('cod')); 
+// inclues
+// console.log(str.includes('Cod'));--->  str me ye parenth h ya nhi h dekhne ke liye mtlb Cod present h ya nhi dekhne ke liye or ye hamesha true or false mtlb boolean me hi ans karega present raha to true or nhi raha to false. 
+
+
+// Slice
+// console.log(str.slice(2,7));---> (2,7) 2 mtlb start kaha se krna h or 7 mtlb end kaha krna h kaha tak chahiye
+// agr koi bohot badi string h usme se koi part katna h extract krke bahar nikalne / agr space raha to wo include hoga lekin last 7th character include nhi hoga. / or agr ek hi argument diya mtlb sirf 2 hi diya to us case me wo 2 hai to 2nd index se wo puri string ko return kr / or originaal string me koi change nhi hoga ye hamesha aapko nayi string return krke dega
+
+// negativeindex 
+// console.log(str.slice(-5));---> last ke 5 trim krke return ayega
+// console.log(str.slice(-5,-2));---> -2 index include nhi hua 
+
+
+// substring--->  negative index ko mark down nhi kr skte
+// const str = `Hello Coder Army Coder`;
+// console.log(str.substring(2,5));
+
+// const a = "Rohit";
+// const b = "Negi";
+// const c = a+b;---> dono ko ek sath combine krne concatenation krne mean string 1 or string 2 ko sath krne
+// const c = a+" "+b;---> dono string ke bich space lane ke liye (" ") ye use kiya gaya  
+
+
+// const str = `Hello Coder Army Coder`;
+// replace 
+// console.log(str.replace("ode","iam"));--->  ek hi time replace hoga
+//--->  (ode) mtlb yaha kisko replace krna h (iam) kis se replace krna h
+
+// console.log(str.replaceAll("ode","iam"));---> sab ode replaceho jayege
+
+// const user = " Rohit ";---> yaha spaces count hoge
+// console.log(user);
+// console.log(user.trim());---> isse rohit ke pass wale spaces cut ho jayege
+// const user = " Rohit Negi ";---> rohit negi ke bich ka space count nhi hoga
+// console.log(user.trim());--->   sirf rohit negi ke starting oe end pr jo space h wohi cut hoge bich ka space cut nhi hoga
+// /ya sirf starting ki space ko dlt krna h to trimStart use kr skte ho or end ki space ke liye trimEnd use kr skte ho 
+
+
+// Split
+//  const names = "Rohit,Mohit,Suraj,Rohan,Anjali"
+//  console.log(names);
+//  console.log(names.split(","));--->  yaha split , ke basis pr hoga mtlb jaha , h waha split hoga
+
+
+
+// DATE
+
+// const now = new Date();
+// console.log(now);---> utc time
+
+// console.log(now.toString());---> India Standard Time 
+// console.log(now.toLocaleString());--->  local time dikhega
+// console.log(now.toISOString());
+
+// Local time chal raha 
+// console.log(now.getDay());---> aaj konsa day h 
+// console.log(now.getDate());---> aaj ki Date kya h wo mlm Krne 
+// console.log(now.getFullYear());---> 
+// console.log(now.getMonth());---> Month return krega or 0 se start hoga mtlb january mtlb 0 base index use karega
+
+
+// Days : Mon- Tue(1 Base Index Use Hota H)
+// Months : jan - Dec (0 Base Index Use Hota H)
+
+// formate to create date string
+// year, month, day/ date, hour, minute, second, millisecond 
+// const now = new Date(2026,6,7,4,57,16,125);
+
+// console.log(now.toString());---> current time / local time
+
+// const now = Date.now();
+
+// console.log(now);//---> yaha millisecond me date print hogi
+// 1783424326424---> Time Stemp
+// milliseconds time me convert kare
+// TimeStamp mtlb jo milliseconds me chal raha h
+// const dates = new Date(1783424326424);
+// console dates = new Date(now);--> now ko print krane pr pata chlta h ke  UTC ka time kya chal raha h millisecond me
+// console.log(dates.toString());
+
+// jo bhi now ki value thi milliseconds me agr date ke andr doge to wo time me convert ho skta h
+// console.log(dates);--->
+// const dates = new Date(0);
+ 
+
+
+// ARRAY
+
+// let marks1 = 100;
+// let marks2 = 50;
+// let marks3 = 70;
+// let marks4 = 80;
+
+// let marks = [100,50,70,80];
+
+// console.log(marks);--->  array ko print krne 
+// console.log(marks.length);--->  array ki length pata krne
+
+// array me string, number, boolean value ya kisi bhi type ka data store kr skte h 
+
+// let arr =[100,30,"Rohit",true];
+
+// perticular element ko access krna h
+// console.log(arr[2]);--->  jo 2 index pr h wo print hoga sirf or array 0 index se shuru hote h
+
+
+// koi array ke element ki value change krna ho to
+
+// arr[1] = 90;--->  mtlb 30 ki value 90 ho jayegi
+// console.log(arr);--->  print krne 
+
+// array me koi naye elemnt ko add krna h 
