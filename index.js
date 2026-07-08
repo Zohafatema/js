@@ -447,4 +447,45 @@
 // arr[1] = 90;--->  mtlb 30 ki value 90 ho jayegi
 // console.log(arr);--->  print krne 
 
-// array me koi naye elemnt ko add krna h 
+// // array me koi naye elemnt ko add krna h 
+// push: Insert element at end 
+// arr.push(90);
+// arr.push("Strike");
+
+// // array se koi element ko delete krne
+// pop operation: Delete element from end
+// arr.pop();
+
+// // Starting add kr skte h
+
+// arr.unshift(10);--->  intert 10 in starting 
+
+// // Delete the element at first place
+
+// arr.shift();--->  1st element delete 
+
+// let arr = [10,30,50,90,11];
+
+// for(let=0;i<arr.lenght;i++);--->  let=0 means 0 se start hoga,i<arr.lenght mean arra ki lenght
+// {
+//     console.log(arr[i];)
+// }
+
+
+// // for of loop
+// ye array ke upr ek ek krke traet krta h
+// for(let num of arr){
+//     console.log(num);
+// }
+
+    // let arr = [10,30,50,90,11];
+    // let arr2 = arr;
+
+    // arr2.push(30);--->  original array me bhi changes hoge qki ye copy by reference hote h ye ek dusre ke reference ko copy krte h
+    // console.log(arr);
+
+    // // object (non-primitive): copy by reference hote h
+    // // primitive: copy by value
+
+    // const: const ki value ya address h wo change hogi na hi isko change kr skte h
+    // 
