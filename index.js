@@ -478,14 +478,16 @@
 //     console.log(num);
 // }
 
-    // let arr = [10,30,50,90,11];
-    // let arr2 = arr;
+// let arr = [10,30,50,90,11];
+// let arr2 = arr;
 
-    // arr2.push(30);--->  original array me bhi changes hoge qki ye copy by reference hote h ye ek dusre ke reference ko copy krte h
-    // console.log(arr);
+// arr2.push(30);--->  original array me bhi changes hoge qki ye copy by reference hote h ye ek dusre ke reference ko copy krte h
+// console.log(arr);
 
-    // // object (non-primitive): copy by reference hote h
-    // // primitive: copy by value
+// // object (non-primitive): copy by reference hote h
+// // primitive: copy by value
 
-    // const: const ki value ya address h wo change hogi na hi isko change kr skte h
-    // 
+// const: const ki value ya address h wo change hogi na hi isko change kr skte h
+    
+
+// let arr = [10,30,50,90,11];
