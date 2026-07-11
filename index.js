@@ -490,4 +490,12 @@
 // const: const ki value ya address h wo change hogi na hi isko change kr skte h
     
 
-// let arr = [10,30,50,90,11];
+// const arr = [10,30,50,90,11];
+// arr[2] = 30;--->  ye index 2 me value change hogi 50 se 30
+
+// const arr = [10,30,50,90,11];
+// const arr2 = arr.slice(2,4);--->  isse ek slice create hogi 2 index se 4 index tk 4th index isme include nhi hoga ye sirf 50,90 wale portion ko slice kr dega 
+// console.log(arr);--->  original array me koi difference nhi ayega
+
+
+// console.log(arr.splice(1,3));--->  1 mtlb kaha se krna h or 3 mtlb kitne element krna h original array se hi wo part trimout ho jaye 
