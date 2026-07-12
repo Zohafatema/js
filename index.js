@@ -509,10 +509,51 @@
 
 // Spread Operator
 
-const arr = [10,30,50,90,11];
-const arr2 = [Rohit,11,true];
+// const arr = [10,30,50,90,11];
+// const arr2 = [Rohit,11,true];
 
-ye dono ko ek dusre ke sath merge karana h 
-arr.push(arr2);--->  isse array ke sath brackets bhi add ho jayege qki pura adda hoga return [10,30,50,90,11,[Rohit,11,true]] ye ayega
+// ye dono ko ek dusre ke sath merge karana h 
+// arr.push(arr2);--->  isse array ke sath brackets bhi add ho jayege qki pura adda hoga return [10,30,50,90,11,[Rohit,11,true]] ye ayega
 
-const arr3 = arr.concat(arr2);---> 
+// const arr3 = arr.concat(arr2);---> isse ek naya array return krke dega
+
+// const arr = [10,30,50,90,11];
+// const arr2 = ["Rohit",11,true];
+// const arr4 = [90,4,false];
+
+// const arr3 = arr.concat(arr2,arr4);--->  multiple array jodne ke liye bracket me array ke baad , comma laga kr next jo array add krna h uska array name likhlena like (arr2,arr4)
+
+// Spread Operator
+
+// const arr3 = [...arr, ...arr2, ...arr4];
+// console.log(arr3);--->  ye 3n array ko faila kr return karega
+
+// const names = ["alice", "Bob", "Charlie"]; //array h usko string me convert krna h 
+// console.log(names.toString());---> yaha name.toStringek naya string return krke dega 
+
+// // Join Operation
+// const names = ["alice", "Bob", "Charlie"];
+// console.log(names.join("-"));--->  join kaise karah h mtlb , isse - isse ya aise kuch bhi add kara skte h join krne yaha ye (alice-Bob-Charlie) ye return karega
+
+// // Simple Searching
+// const names = ["alice", "Bob", "Charlie"];
+// console.log(names.indexOf("Bob"));--->  index pata chalega ki iska index kya h or agr present nhi hoga to -1  return karega agr multipe same value rahe to starting wala hi show return krega 
+
+// const names = ["alice", "Bob", "Charlie", "Bob"];
+// console.log(name.lastIndexOf("Bob"));--->  agr multiple same value rahe jaisse bob to iska last wala konse index pr add hua tha wo index return krega
+
+// console.log(name.includes("Bob"));---> present h ya nhi wo mlm krna h means true false me answer chahiye to ye use hoga means include h to true include nhi h to false return karega
+
+// const names = ["Alice", "Rohit", "Bob", "Mohit", "Charlie"];
+
+// names.sort();//---> // character ke basis pr ye sequence me return karega lekin small a raha to last me jayega ascii table ke hisab se 
+
+// names.reverse();//---> // order reverse h jayega ['Bob', 'Charlie', 'Mohit', 'Bob', 'Rohit', 'Alice'] ye return karega 
+
+// console.log(names);
+
+// const a =[101,90,80,32,91];
+// Array.sort();--->  ye ascii table ke hisab se hi sort hoga wais enhi hoga jaise narmal hota h [101, 32, 80,90,91] ye return karega ascii table ke hisab se
+
+// const a =[10,40,31,71,5,11];
+// a.sort((a,b)=> a-b);--->  jb bhi aapke pass number ho or number ko perticular order me sort krna ho to ye operation ko execute kr skte h
