@@ -495,7 +495,24 @@
 
 // const arr = [10,30,50,90,11];
 // const arr2 = arr.slice(2,4);--->  isse ek slice create hogi 2 index se 4 index tk 4th index isme include nhi hoga ye sirf 50,90 wale portion ko slice kr dega 
-// console.log(arr);--->  original array me koi difference nhi ayega
-
+// console.log(arr);--->  original array me change hua ke ye part usse hat chuka h
 
 // console.log(arr.splice(1,3));--->  1 mtlb kaha se krna h or 3 mtlb kitne element krna h original array se hi wo part trimout ho jaye 
+//console.log(arr);
+
+// const arr3 = arr.splice(1,3);--->  yaha arr3 me trim hua part jo h wo arr3 me store hoga arr3 me mil jayega
+
+// const arr3 = arr.splice(1,3,"Rohit",19);--->  isme ho raha h ki 1 ka mtlb 1st index pr jaiyye 3 ka mtlb waha se mtlb 1 se 3 element ko trimout kriye or uske bad rohit on 19 ko insert kijiye / iska return ya output [10,'Rohit',19,11] aapko mil jayega
+
+// Splice:  original array me ham changes krte h usse part trim out kr dete h
+// Slice:  koi portion ko hatate to h lekin original array me koi changes nhi kr skte
+
+// Spread Operator
+
+const arr = [10,30,50,90,11];
+const arr2 = [Rohit,11,true];
+
+ye dono ko ek dusre ke sath merge karana h 
+arr.push(arr2);--->  isse array ke sath brackets bhi add ho jayege qki pura adda hoga return [10,30,50,90,11,[Rohit,11,true]] ye ayega
+
+const arr3 = arr.concat(arr2);---> 
