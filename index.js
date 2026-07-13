@@ -557,3 +557,13 @@
 
 // const a =[10,40,31,71,5,11];
 // a.sort((a,b)=> a-b);--->  jb bhi aapke pass number ho or number ko perticular order me sort krna ho to ye operation ko execute kr skte h
+
+// a.sort((a,b)=> a-b);
+// 10,31, 40
+// a = 40
+// b = 31
+
+// -ve: Pehle a ayega fir b ayega
+// +ve: pehle b ayega fir a ayega
+
+// console.log(arr);
