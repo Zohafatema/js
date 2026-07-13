@@ -559,11 +559,51 @@
 // a.sort((a,b)=> a-b);--->  jb bhi aapke pass number ho or number ko perticular order me sort krna ho to ye operation ko execute kr skte h
 
 // a.sort((a,b)=> a-b);
+// ascending order
+
 // 10,31, 40
 // a = 40
 // b = 31
+
+//aa.sort((a,b)=> b-a);
+
+// 40,10
+// a = 10
+// b = 40
 
 // -ve: Pehle a ayega fir b ayega
 // +ve: pehle b ayega fir a ayega
 
 // console.log(arr);
+
+
+// const arr = [10,30,50,[40,90,11],80];
+// console.log(arr);--->  if yaha arr[3] krte h to 3rd index print hoga to isme [40,90,11] return karega 
+
+// console.log(arr[3][0]);--->  yaha 2nd array ka 0 index mtlb 40 return hoga
+
+// const arr = [10,30,50,[40,90,[60,19,99],11],80];
+// const a = arr.flat();--->  label 1 decide hoga mtlb ya 2nd array ka bracket opn ho jayega
+// console.log(arr);
+// const a = arr.flat(2);--->  label 2 mtlb 3rd array[60,19,99] ka bracket bhi hat jayega or sab flat ho jayega 
+// console.log(arr);
+// const a = arr.flat(Infinity);--->  jitne bhi No. of label h sbko flat kr dena Infinite label[] jo bhi h sbko
+
+
+// // why array is not array in javascript
+
+
+
+// // Objects
+// // key value
+// const user ={
+//     name: "Rohit",
+//     age: 20,
+//     emailid: "negi@gmail,com",
+//     amount: 3400
+// }--->  name means key ho gayi value means Rohit 
+
+// console.log(user);--->  print krne 
+
+// console.log(user.age);--->  age ko access kr skte ho 
+
