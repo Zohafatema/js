@@ -589,6 +589,10 @@
 // console.log(arr);
 // const a = arr.flat(Infinity);--->  jitne bhi No. of label h sbko flat kr dena Infinite label[] jo bhi h sbko
 
+// Array ki destructuring
+
+// cosnt arr = [10,20,30,40,50,60,70,80,90];
+// const [first,second]= arr;
 
 // // why array is not array in javascript
 
@@ -601,9 +605,141 @@
 //     age: 20,
 //     emailid: "negi@gmail,com",
 //     amount: 3400
-// }--->  name means key ho gayi value means Rohit 
+// }//--->  name means key ho gayi value means Rohit 
+
+//CRUD Operation: Create Read Update Delete 
 
 // console.log(user);--->  print krne 
 
 // console.log(user.age);--->  age ko access kr skte ho 
 
+// user.aadhar = 1234;//--->  kuch or insert krna h uske liye jaise yaha aadhar insert hua
+
+// user.amount = 5000;--->  update krne 
+// console.log(user);
+
+// delete user.emailid;--->  delete krne jaise yaha emailid delete kiye
+// console.log(user)
+
+// const user ={
+//     name: "Rohit",
+//     age: 20,
+//     emailid: "negi@gmail,com",
+//     amount: 3400
+// }
+
+// const user2 = user;
+// user2.age = 21;//--->  agr user2 ke andr koi change krrahe h to user means original Object me bhi cahanges ho jayege
+// console.log(user);
+
+
+
+// imp
+
+// console.log(Object.keys(user));--->  (Object.keys(user)) ye operation ek array create krta h or usi me sab keys rakh deda h
+
+// console.log(Object.values(user));--->  value return karega user yaha object ka naam h
+
+// console.log(Object.entries(user));--->  agr dono bhi chize keys and value print karan h tab use hoga
+
+
+
+// for(let keys in user){
+//   console.log(keys, user[keys]);
+// }--->  for in loopka use krke keys ka access
+
+// const user ={
+//     name: "Rohit",
+//     age: 20,
+//     emailid: "negi@gmail,com",
+//     amount: 3400
+// }
+
+// for of loop array ke
+// const temnparr = Object.keys(user);
+// console.log(temnparr)
+// for(let keys of temnparr);{
+//     console.log(keys);
+// }
+
+// for(let values of Object.values(user)){
+//     console.log(values);
+// }
+
+// for(let values of Object.entries(user)){
+//     console.log(values);
+// }--->  key or value dono ek sath print krke dena h
+
+// for (let [keys,values] of Object.entries(user)){
+//     console.log(keys,values);
+// }
+
+
+// const name = user.name;
+
+// // object destructuring
+
+// const {name,age} = user;--->  Object ki destructuring ke user object se 2 value nikal li h ek name ek age
+
+// const {name:userName,age:userAge} = user;--->  user object se name or age nikalliye lekin use baad variable ka name change krna h to
+// console.log(userName,userAge);---> print krne
+
+// koi Object me function bhi create kr skte h
+// const user ={
+//     name: "Rohit",
+//     age: 20,
+//     emailid: "negi@gmail,com",
+//     amount: 3400,
+//     greeting: function(){
+//         console.log("Strike is coming on 18 october");
+//         return 20;
+//     }
+// }
+
+// const va = user.greeting();
+// console,log(va);--->  20 return hoga
+
+
+// // Nested Object (Object ke and Object)
+// const user ={
+//     name: "Rohit",
+//     age: 20,
+//     emailid: "negi@gmail,com",
+//     amount: 3400,
+//     address:{
+//         city: "kotdwar",
+//         state: "Uttarkhand" 
+//     }
+// }    
+
+// console.log(user.address);---> addressko access krne ke liye 
+
+// console.log(user.address.city);--->  City ko access krne ke liye
+
+// // Independents copy create krna
+
+// Spread Operator 1 level walo ko hi handle krta h independent krta h nested walo ko handle nhi karega unme dono ka reference same hoga 
+
+
+// // shallow copy 
+
+// const user2 = {...user};
+// user2.name = "Mohan"; --->  independent copy bn jayega user 2 me add karege to user me changes nhi hoge means user me show nhi hoaga
+
+
+// // deep copy
+
+// const user2 = structuredClone(user);--->  yaha don bhi independent ban jayege
+
+// console.log(user2);
+
+// Keys ki value String ya Symbol ho skti h
+
+// const user ={
+//     name:"Rohit",
+//     age:20,
+//     0: 100,
+//     2:"Mohan"
+// }
+
+// console.log(user[0]);--->  number wale key ko access krne ke liye
