@@ -743,3 +743,155 @@
 // }
 
 // console.log(user[0]);--->  number wale key ko access krne ke liye
+
+// function greeting(){
+//     console.log("Hello Coder Army");
+// }--->  pehle function key word use karege then greeting means jo naam rakhna ho wo likh skte h then bracket uske baad curlybracket fir usme jo code raha likh skte ho
+
+// greeting();--->  function execute krne
+
+// function addNumber(num1,num2){
+//     const sum = num1+num2;
+//     console.log(sum);
+// }--->  num1,num2 yaha parameter h
+
+// addNumber(3,4);--->  3,4 yaha argument h 
+
+// addNumber(6,7,8);---> 
+
+// function addNumber(num1,num2,num3){
+//     const sum = num1+num2;
+//     console.log(sum);
+// }
+
+// function addNumber(num1,num2,num3=0,num4=0){
+//     const sum = num1+num2;
+//     console.log(sum);
+// }
+// addNumber(6,7,8,9);
+
+// kabhi 2 argument pass ki kabhi 3 ki kabhi 4 pass kadi tab jaise 2 argument ki 3 4 nhi h tab parameter m numn=0 ye likh skte h ke unme default value 0 daal dena
+
+// function addNumber(num1,num2,num3=0,num4=0){
+//     const sum = num1+num2;
+//     console.log(sum);
+// }
+
+// addNumber(3,4);--->  jaise yaha num3 num4 ko num3=0 num4=0 mtlb yaha 3 4 vvalue mention nhi h to default 0 value hogi
+// addNumber(6,7,8);
+// addNumber(6,7,8,9);
+
+// // Rest Operator
+// function addNumber(...num){
+
+//     let sum=0;
+    
+//     for(let n of num){
+//         sum+=n;
+//     }
+//     console.log(sum);
+// }
+// //--->  ...num ye rest operator h function me jitni bhi values bhejoge sbko ek array me store kr dega
+// //--->  let sum = 0; ye ek variable bna jiska naam sum h start me uski value 0 rakhi h
+// //--->  sum+=n mean sum = sum + n
+
+// Spread Operator: Object ya Array h usko kholta h
+// Rest Operator: jab bohot sari individual values aarahi h unko catch krna hwaha rest operator use hoga
+
+// Function expression
+
+// const addNumber =funstion(num1,num2){
+//     return num1+num2;
+// }
+
+// console.log(addNumber(3,4));
+
+// Arrow function
+
+// const addNumber = ()=>{
+//     console.log("Hello");
+
+// }--->  arrow present h function keyword present nhi h
+
+// addNumber();
+
+// const addNumber = (num1,num2)=>{
+//     return num1+num2;
+// }
+
+// console.log(addNumber(2,3));
+
+// const addNumber = (num1,num2)=> num1+num2;
+// console.log(addNumber(2,3));
+// //--->  ek koi value ko return krna ho to isko bina curly bracket or bina return word likhe bhi kr skte ho
+
+// const squareNumber = (num)=> num*num;
+// console.log(squareNumber(4));
+// //---> lekin agr ek hi parameter ho to squareNumber = (num) yaha num pr bracket lagane ki zarurat nhi h
+
+
+// const greeting = ()=> {
+//     let user = {
+//         name: "Rohit",
+//         age: 20,
+//     }
+//     return user;
+// }
+
+// console.log(greeting());
+
+// const greeting = ()=> ({ name:"Rohit",age:20});
+// console.log(greeting());--->  agr code me return nhi likha gaya to {} curly bracket se pehle () bracket lagana hoga nhi to error ayega
+
+
+// // IIFE (Immediately Invoked Function Expression)
+
+// (function greeting(){
+//     console.log("Hello");
+// })();
+// //--->  direct call krne ke liye ()() 2 bracket use hoge 1st me code pura rap hoga then call krne uske baad dusra wala bracket pehle bracket ko call krne means 1st bracket me function define hoga then 2nd se function call hoga
+
+// (()=>{
+//     console.log("Hii");
+// })();
+
+// // Callback function
+
+// function sayHello(){
+//     console.log("Hello");
+// }
+
+// function add(num1,num2,Callback){
+//     console.log(num1+num2);
+//     Callback();
+// }--->  is function me as a parameter ek or function pass krna tha to yaha (add(num1,num2,Callback)) us function ko receive krne ke liye callback ek naam diya h usi naam se (Callback();) is function ke andr call kringe
+
+// let a = 10;
+// let b = 20;
+
+// add(a,b,sayHello);---> jo function ka naam tha wo yaha pass kr diya
+
+// function greet(){
+//     console.log("Hello");
+// }
+
+// function meet(callback){
+//     console.log("I am going to meet someone");
+//     callback();
+// }
+
+// meet(greet);--->  ya use krne se weeeeeeeeeeeeeeeeepehle meet wala function call hoga yaha
+// meet(greet());--->  ya use krne se pehle greet wala function call hoga 
+
+
+function zomatoOrderPlaced(){
+    console.log("We have started preparing your food");
+}
+
+function payment(amount){
+    console.log(`${amount} payment has initailized`)
+    console.log("payment is received");
+    zomatoOrderPlaced();
+}
+
+payment(500);
