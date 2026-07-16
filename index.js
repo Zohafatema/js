@@ -5,6 +5,8 @@
 // let age = 25;0
 // console.log("name , age")
 
+const { memo } = require("react");
+
 
 // const
 // const account = 1234;
@@ -884,14 +886,107 @@
 // meet(greet());--->  ya use krne se pehle greet wala function call hoga 
 
 
-function zomatoOrderPlaced(){
-    console.log("We have started preparing your food");
-}
+// function zomatoOrderPlaced(){
+//     console.log("We have started preparing your food");
+// }
 
-function payment(amount){
-    console.log(`${amount} payment has initailized`)
-    console.log("payment is received");
-    zomatoOrderPlaced();
-}
+// function payment(amount){
+//     console.log(`${amount} payment has initailized`)
+//     console.log("payment is received");
+//     zomatoOrderPlaced();
+// }
 
-payment(500);
+// payment(500);
+
+
+// // How JS Code Runs Behind the Scenes & Hoisting
+
+// var a = 10;
+// var b =20;
+
+// function addNumber(num1,num2){
+//     var sum = num1+num2;
+//     return sum;
+// }
+
+// var sumResult1 = addNumber(a,b);
+// var sumResult2 = addNumber(4,5);
+
+// console.log(sumResult1,sumResult2);
+
+// jab bhi javascript ke code ko run krte h jab 
+// code run ---> Execution context create(Ec) hota h EC means jab code ko run krna hota h to 2 phases me krte h
+// 1st phase --> memory allocation phase
+// 2nd phase --> Execution phase
+
+// in memory allocation phase ---> jitne bhi code me variables present h unko memory allocate krni h  
+// agr variable rahe to usme undefined daal de raha h or agr function rahe to jo bhi function ka code rahega wo daal dega
+// var a = undefined ---> variable raha to undefine daal dega
+// var b = undefined
+// func addNumber = {func code} ---> functionraha to function code daal dega 
+// var sumResult1 = undefined
+// var sumResult2 = undefined
+
+// memory allocation phase h ye meory allocate kaha ho rahi h --> primative type ke data uski memory allocate / primative ke small integer hote h unki stack ke ander hoti h or uske alawa jitne bhi hote h sbko heep me rakha jata h 
+
+
+// in Execution phase ---> code execute krega
+// a = 10
+// b = 20
+// func addNumber ={fn code}
+// var sumResult1 = 30 ---> yaha num1+num2 ka sum hoga
+// var sumResult2 = 9 ---> num1+num2 ka sum hoga
+
+// jab code pehli baar run hota h usko globel execution context (GEC) kehte h means Jab JavaScript is file ko start se run karti hai, tab Global Execution Context banta hai
+// GEC sirf 1 baar banta hai.
+// var a = 10;
+// var b = 20;
+// function addNumber(...) { ... }
+// var sumResult1 = addNumber(a, b);
+// var sumResult2 = addNumber(4, 5);
+// console.log(sumResult1, sumResult2);
+// jab code 2nd time run ya baki time hota h wo normal execution context  hote h
+// jaise sumResult1 me num1 num2 ki value rakhna hoti h wo code run time second hoga
+// FEC jitni baar function call hoga utni baar banta hai. addNumber() 2 baar call hua, isliye 2 alag Function Execution Contexts bane.
+// var sumResult1 = addNumber(a, b);
+// var sumResult2 = addNumber(4, 5); 
+
+// Global Executin context hoga wo stack me jata h
+
+// memory allocation phase
+// a = undefined
+// b = undefined
+// addNumber = {fn code}
+// sumResult1 = (a,b)
+// sumResult2 = (4,5)
+
+// Execution Phase
+// Ab values assign hoti hain
+// a = 10
+// b = 20
+
+// //jab memory allocate ho a or value nhi di gayi ho or code run kr rahe ho console.log(a) to return a = <uninitialised> ise ham (temporal dead zone) bol skte H iska mtlb hi yahi jab tak variable me value na chali jaye tab tak access nhi hota
+
+
+// let a = 10; 
+// const b = 20;
+
+// const addNumber = function(num1,num2){
+//     const sum = num1+num2;
+//     return sum;
+// }
+
+// const result = addNumber(a,b);
+// console.log(result);
+
+// // let const
+// // Memory allocation
+// // a = <uninitialised> (temporal dead zone)
+// // b = <uninitialised> (temporal dead zone)
+// // addNumber = <uninitialised> (temporal dead zone)
+// // result = <uninitialised> (temporal dead zone)
+// /// Execution
+// // a = 10
+// // b = 20
+// // addNumber = {func code}
+// // result = sum=a+b (30)
