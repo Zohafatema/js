@@ -5,7 +5,6 @@
 // let age = 25;0
 // console.log("name , age")
 
-const { memo } = require("react");
 
 
 // const
@@ -990,3 +989,34 @@ const { memo } = require("react");
 // // b = 20
 // // addNumber = {func code}
 // // result = sum=a+b (30)
+
+
+// Scope , Closure, and HOF
+// Scope : (3 types)
+// Global Scope: Accessible for everyone
+// Functional Scope: accessible only to that function
+// Block Level Scope: accessible only to that block 
+
+let a = 10;
+const b = 20;
+// a and b dono variables global scope h to inko code m kahi bhi use kr skte ho
+// let const 3no scopes ko respect dete h or var global functional ko respect deta h block ko bilkul respect nhi deta
+
+
+if (true){
+    let d = 35;
+    console.log(d);
+}
+console.log(d);
+
+function greet(){
+    let c = 30;
+    console.log(c);
+}
+// c variable ka scope sirf function tak hi h function ke bahar isko koi bhi access nhi kr skta mean function ke bahar iska use nhi hoga so iska scope jo h functional scope h
+console.log(c);--->  functional scope h function ke bahar use kiya gya h error ayega
+
+greet();
+
+
+let global = 30;
