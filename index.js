@@ -991,7 +991,7 @@
 // // result = sum=a+b (30)
 
 
-// // Scope , Closure, and HOF
+// // Scope , Closure, and Higher OF function (???)
 // // Scope : (3 types)
 // // Global Scope: Accessible for everyone
 // // Functional Scope: accessible only to that function
@@ -1034,29 +1034,150 @@
 
 
 
-function createCounter(){
+// function createCounter(){
 
-    function increament(){
-        console.log("I am increament function");
-    }
-    return increament;
-}
+//     function increament(){
+//         console.log("I am increament function");
+//     }
+//     return increament;
+// }
 
-const countet = createCounter();
-console.log(counter); 
-counter();
+// const countet = createCounter();
+// console.log(counter); 
+// counter();
 
 
-// Closure : 
+// // Closure : 
 
-function createCounter(){
+// function createCounter(){
 
-    let count = 0;
-    function increament(){
-        count++
-        return count;
-    }
-    return increament;
+//     let count = 0;
+//     function increament(){
+//         count++
+//         return count;
+//     }
+//     return increament;
 
-}
-console.log(count);--->  ye function me present h to accessible nhi hoga
+// }
+// console.log(count);--->  ye function me present h to accessible nhi hoga
+
+
+
+// let balance = 500;
+// balance+="Rohit";
+// console.log(balance);
+
+
+// let user = {
+//     balance: 500,
+//     deposite: function(amount){
+//         if(typeof amount==="number" && amount>0){
+//             this.balance+=amount;
+//             return this.balance;
+//         }
+//     }
+// }
+
+// // console.log(user.deposite(200));
+// user.deposite(200);
+// console.log(user.balance);
+
+
+// forEach, Filter, Reduce, Map, and Set
+
+// const arr = [10,20,30,5,90,87];
+
+// arr.forEach((number,index,arr))=>{
+//    console.log(number,index,arr);     
+// }--->  ye 3 arguments ko ek sath le skta h call back function H
+
+// const arr = [10,20,30,5,90,87];
+//    let sum = 0;
+
+// arr.forEach((number)=> {
+//    sum+=number;     
+// })
+// console.log(sum);
+
+
+// Filter--> agr koi original array h usme se kuch selected element ko hi select krna h 
+
+// const arr = [10,20,30,5,90,87];
+
+// const newarr = arr.filter((number)=>number>25);--->  number>25 ye condition hai condition true huyi to ye usko select kr lega or agr false huyi to ye usko reject kr dega 
+
+// const arr = [10,20,30,5,90,87];
+
+// arr.filtering = function(compare){
+//     const ans = [];
+//     for(let num of this){
+//         if(compare(num)){
+//             ans.push(num);
+//         }
+//     }
+//     return ans;
+// }
+// const newarr = arr.filtering((num)=>num>30);
+// console.log(newarr);
+
+
+// const a = [80,60,90,70,42,33];
+// const answer = a.filtering((num)=>num>25);
+// console.log(answer);
+
+
+// Map--->
+// Electronics
+[{id; 1, name: "Laptop", category: "Electronices", price: 1200, inStock: true},
+{id: 2, name: "Headphones", category: "Electronics", price: 200, instock: true},
+{id: 3, name: "Monitors", category: "Electronics", price: 800, instock: false},
+{id: 4, name: "Smartphones", category: "Electronics", price: 300, instock: true},
+{id: 5, name: "Keyboards", category: "Electronics", price: 75, instock: true},
+];
+
+const newProducts = products.filter((product)=>product.price>50).sort((a,b)=>b.price-a.price).map((product)=> ({name:product.name price:product.price})
+console.log(newProduct);
+
+const ans = products.map((product)=>({name:product.name, price:product.price}))
+console.log(ans);
+
+// Reduce
+accumulator = sum = 0
+
+const tatalPrice = products.reduce((accumulator,currentValue)=>{
+     return accumulator+currentValue.price;
+    },0);
+console.log(tatalPrice0);
+
+
+
+// Data structure: set
+
+// set ek type ka array hi hota h jisme ek unique value present hoti h
+ 
+// const arr = [10,20,30,10,15,25,20];
+// console.log(arr);
+
+// const s1 = new Set(arr);---> isme sirf unique value milegi duplict thi unko ek hi bar lega mean koi 4 time bhi aya ek number to usko ek bhi br select karega set sirf unique value ko hi store krke rakhta h 
+// s1.add(11);---> s1 set ke andr koi value ko add krna ho to jaise yaha 11 add hoga
+// console,log(s1);
+
+// console.log(s1.has(20));--->  perticular koi value presnt h ya nhi h check krne ke liye jaise yaha 20 present h ya nhi h to ye true or false me ans karega
+
+// s1.delete(11);---> perticular koi value ko delete krna ho to ye use hoga jaise yaha 11 ko delete krna h
+
+// console.log(s1.size);--->  array ka size kya h pata krne kitne values present h isme dekhne
+
+// s1.clear();---> isse sari value clear ho jayegi to size bhi zero ho jayegi
+
+
+const email = ["ro@gm","ra@gm","mo@gm","ro@gm"];
+const uniqueEmail = [...new Set (email)];---> spread operator use krke spread krke array ke andr dalne ke liye
+console.log(uniqueEmail);
+const s1 = new(email);
+for(let num of s1){
+    console.log(num);---> 
+}---> for of loop se email pr iterat bhi kr skte h
+
+
+// map;
