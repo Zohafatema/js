@@ -1183,3 +1183,5 @@ for(let num of s1){
 // map;
 
 // DOM
+//document object model
+
