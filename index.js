@@ -1185,3 +1185,5 @@ for(let num of s1){
 // DOM
 //document object model
 
+// Events and Event Listeners
+
