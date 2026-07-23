@@ -2,7 +2,7 @@
 // variable
 // let
 // let name = zoha;
-// let age = 25;0
+// let age = 25;
 // console.log("name , age")
 
 
@@ -1187,3 +1187,6 @@ for(let num of s1){
 
 // Events and Event Listeners
 
+Event:  mapouse move,click,doubleclick
+Event Listener: Listening the event(click)
+Event Action: 
