@@ -1187,6 +1187,8 @@ for(let num of s1){
 
 // Events and Event Listeners
 
-Event:  mapouse move,click,doubleclick
-Event Listener: Listening the event(click)
-Event Action: 
+// Event:  mapouse move,click,doubleclick
+// Event Listener: Listening the event(click)
+// Event Action:
+//
+//
