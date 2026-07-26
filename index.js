@@ -1192,4 +1192,8 @@ for(let num of s1){
 // Event Action:
 //
 //
-//
+
+
+
+
+//  Single Threaded, Synchronous Execution, and Event Loop
