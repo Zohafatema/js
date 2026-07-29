@@ -1128,26 +1128,26 @@
 
 // Map--->
 // Electronics
-[{id; 1, name: "Laptop", category: "Electronices", price: 1200, inStock: true},
-{id: 2, name: "Headphones", category: "Electronics", price: 200, instock: true},
-{id: 3, name: "Monitors", category: "Electronics", price: 800, instock: false},
-{id: 4, name: "Smartphones", category: "Electronics", price: 300, instock: true},
-{id: 5, name: "Keyboards", category: "Electronics", price: 75, instock: true},
-];
+// [{id; 1, name: "Laptop", category: "Electronices", price: 1200, inStock: true},
+// {id: 2, name: "Headphones", category: "Electronics", price: 200, instock: true},
+// {id: 3, name: "Monitors", category: "Electronics", price: 800, instock: false},
+// {id: 4, name: "Smartphones", category: "Electronics", price: 300, instock: true},
+// {id: 5, name: "Keyboards", category: "Electronics", price: 75, instock: true},
+// ];
 
-const newProducts = products.filter((product)=>product.price>50).sort((a,b)=>b.price-a.price).map((product)=> ({name:product.name price:product.price})
-console.log(newProduct);
+// const newProducts = products.filter((product)=>product.price>50).sort((a,b)=>b.price-a.price).map((product)=> ({name:product.name price:product.price})
+// console.log(newProduct);
 
-const ans = products.map((product)=>({name:product.name, price:product.price}))
-console.log(ans);
+// const ans = products.map((product)=>({name:product.name, price:product.price}))
+// console.log(ans);
 
-// Reduce
-accumulator = sum = 0
+// // Reduce
+// accumulator = sum = 0
 
-const tatalPrice = products.reduce((accumulator,currentValue)=>{
-     return accumulator+currentValue.price;
-    },0);
-console.log(tatalPrice0);
+// const tatalPrice = products.reduce((accumulator,currentValue)=>{
+//      return accumulator+currentValue.price;
+//     },0);
+// console.log(tatalPrice0);
 
 
 
@@ -1171,13 +1171,13 @@ console.log(tatalPrice0);
 // s1.clear();---> isse sari value clear ho jayegi to size bhi zero ho jayegi
 
 
-const email = ["ro@gm","ra@gm","mo@gm","ro@gm"];
-const uniqueEmail = [...new Set (email)];---> spread operator use krke spread krke array ke andr dalne ke liye
-console.log(uniqueEmail);
-const s1 = new(email);
-for(let num of s1){
-    console.log(num);---> 
-}---> for of loop se email pr iterat bhi kr skte h
+// const email = ["ro@gm","ra@gm","mo@gm","ro@gm"];
+// const uniqueEmail = [...new Set (email)];---> spread operator use krke spread krke array ke andr dalne ke liye
+// console.log(uniqueEmail);
+// const s1 = new(email);
+// for(let num of s1){
+//     console.log(num);---> 
+// }---> for of loop se email pr iterat bhi kr skte h
 
 
 // map;
@@ -1198,4 +1198,80 @@ for(let num of s1){
 
 //  Single Threaded, Synchronous Execution, and Event Loop
 // callback Hell
+
+
 // Promises
+
+// Async & Await
+
+// Await function ka use async function me use hoga agr async ke bina use kiye to wo pura freez ho jayega isiliye
+// await ko hamesha async ke sath hi use kro
+// Await keyword se program waha wait karega
+// async function github() {
+//     const response = Await fetch("https://api.github.com/users");
+//     const data = Await Response.json();
+//     console.log(data);
+// }
+
+// github();
+
+// console.log("hii")
+// // Async function me isiliye likha jata ke jo special wait krne ke liye function h wo async me likhe jaye take bahar ke code ko execute hone time na lage  mean jo execute baad me hone wale h wo tab tak execute ho jayege ge
+
+// Prototypes and Classes
+
+// Prototype means 
+
+// const obj = {
+//     name:"Rohit",
+//     age:38,
+//     greet: function(){
+//         console.log("Hello")
+//     }
+// };
+
+// console.log(obj.name);
+// obj.greet();
+
+// const obj2 = {
+//     account:30
+// }
+
+// obj2.__proto__ = obj;// ---> yaha ( __proto__ ), object2 (obj2) obj se link karega mean obj ko pointout karega ( __proto__ ) link krne use hoga
+
+// console.log(obj.name);//---> means agr obj 2 me wo property nhi h jo likhi gayi tb wo obj2 se link kiya ho to wo uske upr wale obj me search karega tb return value dega
+
+// Classes
+
+// const obj1 = {
+//     name:"Rohit",
+//     age:38,
+//     greet: function(){
+//         console.log(`Hello ${this.name}`);
+//     }
+// };
+
+// const obj2 = {
+//     name:"Mohan",
+//     age:38,
+//     greet: function(){
+//         console.log(`Hello ${this.name}`);
+//     }
+// };
+
+// class person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     sayHi(){
+//         console.log(`Hi ${this.name}`);
+//     }
+// }
+
+// const person1 = new person("Rohit",20);// ---> new ke baad class ak name ayega jo likha gya h jaise yaha person uske bad jo object me value dalna ho dal skte h jaise name m rohit age me 20
+// console.log(person.name)
+
+
+// this Keyword, Call, Apply, and Bind
