@@ -1275,3 +1275,14 @@
 
 
 // this Keyword, Call, Apply, and Bind
+
+// this: Class object method
+// strict mode vs non strict mode
+// 'use strict' //--->  use for model javascript
+// global Object: In window it is called window, In node js,It is called global 
+// globalThis: points to global object of the environment (means dono browser(browser,node js environment) me run ho jayega)
+
+// This 
+// Learn about this keyword
+
+console.log(this);//---> this yaha node js environment me empty object ko pointout krta h, or browser me window me ye yshs globsl object ko pointout krta h
