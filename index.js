@@ -1281,6 +1281,8 @@
 // 'use strict' //--->  use for model javascript
 // global Object: In window it is called window, In node js,It is called global 
 // globalThis: points to global object of the environment (means dono browser(browser,node js environment) me run ho jayega)
+// normal function: non strict mode, this will point to global object
+// in strict mode: it will point to undefined
 
 // This 
 // Learn about this keyword
