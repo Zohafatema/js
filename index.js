@@ -1281,10 +1281,116 @@
 // 'use strict' //--->  use for model javascript
 // global Object: In window it is called window, In node js,It is called global 
 // globalThis: points to global object of the environment (means dono browser(browser,node js environment) me run ho jayega)
+// this keyword in global scpe: nodejs empty object, in browser itwill point to global object
+// arrow function  take this keyword from it lexical environment scope
 // normal function: non strict mode, this will point to global object
 // in strict mode: it will point to undefined
+// in class constructor, this will point to newly create empty object
 
 // This 
 // Learn about this keyword
 
-console.log(this);//---> this yaha node js environment me empty object ko pointout krta h, or browser me window me ye yshs globsl object ko pointout krta h
+// console.log(this);//---> this yaha node js environment me empty object ko pointout krta h, or browser me window me ye yshs globsl object ko pointout krta h
+
+
+// function greet(){
+//     console.log(`hi ${this.name}`);
+// }
+
+// function increamentAge(value,name){
+//     this.age+=value;
+//     this.name=name;
+//     console.log(this.age);
+//     console.log(this.name);
+// }
+
+// const user = {
+//     name:"Rohit",
+//     age:30,
+// }
+
+// const user2 = {
+//     name:"mohit",
+//     age:10,
+// }
+
+// // increamentAge.call(user2,10,"mohan");//---> pehla wala means user2 this keyword ko point out karega then 10 pegli value mohan dusri value
+// or yaha individual bheja jayega
+// // increamentAge.apply(user2,[10,"mohan"]);//---> same call jaisa hi work karega bs 10 or mohan jo h wo array ke format me bheje ja rahe h
+// const incr = increamentAge.bind(user2,10,"mohan");
+// incr();
+
+// // call apply and bind, this point to the invoking object
+
+
+// class
+
+// class person{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+// }
+
+// // behind the scene : new keyword ek empty object create krta h or is case me this empty object ko pointout krta h
+// // is tarike se jab bhi class ke sath kaam karoge to class ke sath jo this keyword hota h wo kiss ko pointout karta h jab aap new keyword se usko create krte ho wo empty object ko pointout krraha hota h
+
+// const p1 = new person("Rohit",20);
+
+// console.log(p1);
+
+
+// // Arrow Function: this keyword doesnt exist for arrow function, lexical environment scope
+// // 'use strict'
+
+// console.log(this)
+
+// const greet = ()=>{
+//     console.log(this);
+// }
+
+// const meet = ()=>{
+//     console.log(this);
+// }
+
+// greet();
+// global scope hota h usme jo this hota h wo ek empty object ko point krrha h
+// this empty object ko pointout krta h or windows ke andr this window ko pointout krta h
+
+// 'use strict'
+
+// const user = {
+//     name:"Rohit";
+//     greet: function(){
+
+//         function meet(){
+//             console.log(this);
+//         }
+//         meet();
+//     }
+// }
+
+// user.greet();
+
+
+// const stopWatch = {
+//     second:0,
+//     start: function(){
+//          console.log(this)//---> ye this keyword stopWatch wale ko hi point kr rha h
+//         setInterval(()=>{
+//             this.second++;
+//             console.log(this.second);
+//         },1000)// ---> ye ek level baha jakr this keyword ko lega qki iske pass iska khudka this nhi h
+//     }
+// }
+
+// stopWatch.start();
+
+
+const user = {
+    name:"Rohit",
+    greet: ()=>{
+        console.log(this);
+    }//---> greet callback function h
+}
+user.greet();//---> jab bhi callback function ko invoke krte ho to uske pass khud ka this keyword h hi nhi to wo apne se bahar jayega apne se bahar wale scope pr dekhega bahar se mtlb user ke bahar se to wo this keyword global scope se borrow krega lega or global scope me wo ek empty object ko pointout krrha tha isiliye ans me empty object dikha
