@@ -1387,10 +1387,68 @@
 // stopWatch.start();
 
 
-const user = {
-    name:"Rohit",
-    greet: ()=>{
-        console.log(this);
-    }//---> greet callback function h
+// const user = {
+//     name:"Rohit",
+//     greet: ()=>{
+//         console.log(this);
+//     }//---> greet callback function h
+// }
+// user.greet();//---> jab bhi callback function ko invoke krte ho to uske pass khud ka this keyword h hi nhi to wo apne se bahar jayega apne se bahar wale scope pr dekhega bahar se mtlb user ke bahar se to wo this keyword global scope se borrow krega lega or global scope me wo ek empty object ko pointout krrha tha isiliye ans me empty object dikha
+
+
+
+
+
+// questions:
+
+
+// function check(num){
+//     if( num === 0){
+//       console.log("zero");
+//     }
+//     if (num >= 20){
+//          console.log("positive");
+//     }
+//     else
+//         console.log("negative");
+    
+// }
+// check(20);
+
+
+// function check(num){
+//     if (num % 2 === 0){
+//         console.log("Even");
+//     }
+//     else{
+//         console.log("Odd");
+//     }
+// }
+// check(10);
+
+
+function find(num1,num2){
+    if (num1>num2){
+        console.log("num1");
+    }
+    else if (num1<num2) {
+        console.log("num2");
+    }
+    else{
+        console.log("Both are equal");
+    }
 }
-user.greet();//---> jab bhi callback function ko invoke krte ho to uske pass khud ka this keyword h hi nhi to wo apne se bahar jayega apne se bahar wale scope pr dekhega bahar se mtlb user ke bahar se to wo this keyword global scope se borrow krega lega or global scope me wo ek empty object ko pointout krrha tha isiliye ans me empty object dikha
+find(120,500);
+
+function find(num1,num2,){
+    if (num1>num2){
+        console.log("num1");
+    }
+    else if (num1<num2) {
+        console.log("num2");
+    }
+    else{
+        console.log("Both are equal");
+    }
+}
+find(120,500);
