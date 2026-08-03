@@ -1427,28 +1427,51 @@
 // check(10);
 
 
-function find(num1,num2){
-    if (num1>num2){
-        console.log("num1");
-    }
-    else if (num1<num2) {
-        console.log("num2");
-    }
-    else{
-        console.log("Both are equal");
-    }
-}
-find(120,500);
+// function find(num1,num2){
+//     if (num1>num2){
+//         console.log("num1");
+//     }
+//     else if (num1<num2) {
+//         console.log("num2");
+//     }
+//     else{
+//         console.log("Both are equal");
+//     }
+// }
+// find(120,500);
 
-function find(num1,num2,){
-    if (num1>num2){
-        console.log("num1");
+// function find(num1,num2,num3){
+//     if (num1>num2){
+//         console.log("num1");
+//     }
+//     else if (num1<num2) {
+//         console.log("num2");
+//     }
+//     else{
+//         console.log("Both are equal");
+//     }
+// }
+// find(120,500);
+
+// l
+
+// function check(year){
+//     if (year%4===0){
+//         console.log("leap year");
+//     }
+//     else{
+//         console.log("not leap year");
+//     }
+// } 
+// check(2024);
+
+
+function check(char){
+    if (char==="a" ||char==="e"){
+        console.log("vowel");
     }
-    else if (num1<num2) {
-        console.log("num2");
+    else { 
+        console.log("consonant");
     }
-    else{
-        console.log("Both are equal");
-    }
-}
-find(120,500);
+} 
+check("c");
