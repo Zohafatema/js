@@ -1466,12 +1466,27 @@
 // check(2024);
 
 
-function check(char){
-    if (char==="a" ||char==="e"){
-        console.log("vowel");
-    }
-    else { 
-        console.log("consonant");
-    }
-} 
-check("c");
+// function check(char){
+//     if (char==="a" ||char==="e"){
+//         console.log("vowel");
+//     }
+//     else { 
+//         console.log("consonant");
+//     }
+// } 
+// check("c");
+
+// switch(operator){
+//      if ("+"):
+//        {console.log("a+b");
+//      break;}
+//      else if ("-"):
+//        {console.log("a-");}
+//      break;}
+//      case"*":
+//        {console.log();}
+//      break;
+//      case"/":
+//        {console.log();}
+//      break;
+// }
