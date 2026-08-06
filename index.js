@@ -1497,7 +1497,38 @@
 //     console.log(i);
 // }
 
-for(i=10;i>=1;i--)
-    {
-    console.log(i);
+// for(i=10;i>=1;i--)
+//     {
+//     console.log(i);
+// }
+
+
+// for (i=1;i<=10;i++)
+// {
+// console.log(i*3);
+// }
+
+
+// const name = "Rohit";
+// // console.log(name.length);
+
+// console.log(name[2]);
+
+// const name = "Rohit"
+// for(i=0;i<=name.length;i++){
+//     console.log(name[i]);// --->ye name ko index ke hisab se 1 by 1 print kr wayega
+    
+// }
+
+// const name = "Rohit"
+// for(i=0;i<name.length;i++){
+//     console.log(name[i]);
+    
+// }
+
+
+function primeNumber(){
+    for(i=2;i<primeNumber;i++){
+        console.log(i*1);
+    }
 }
