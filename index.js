@@ -1527,8 +1527,15 @@
 // }
 
 
-function primeNumber(){
-    for(i=2;i<primeNumber;i++){
-        console.log(i*1);
+function primeNumber(num){
+    if(num=num||num/1){
+        console.log("prime no");
+    }else
+        {
+         console.log("no.")
     }
 }
+primeNumber(6)
+
+
+function
