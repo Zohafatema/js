@@ -1538,4 +1538,4 @@ function primeNumber(num){
 primeNumber(6)
 
 
-function
+function()
