@@ -1527,15 +1527,14 @@
 // }
 
 
-function primeNumber(num){
-    if(num=num||num/1){
-        console.log("prime no");
-    }else
-        {
-         console.log("no.")
-    }
-}
-primeNumber(6)
+// function primeNumber(num){
+//     if(num=num||num/1){
+//         console.log("prime no");
+//     }else
+//         {
+//          console.log("no.")
+//     }
+// }
+// primeNumber(6)
 
-
-function()
+console.log(Math.round(1.5));
