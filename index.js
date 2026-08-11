@@ -1537,4 +1537,146 @@
 // }
 // primeNumber(6)
 
-console.log(Math.round(1.5));
+// console.log(Math.round(1.5));
+
+
+
+
+// for (let i=0; i<=10; i++){
+//         console.log(i*5);
+// }
+
+// let i=0;
+// while(i<=10){
+// console.log(i*5);
+// i++;
+// }
+
+
+// const name="Rohit";
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+
+
+// const text = document.createElement("h1");
+// text.textContent="web page";
+// document.body.append(text);
+
+
+// const button = document.createElement("button");
+// button.textContent = "button";
+
+// button.addEventListener("click",()=>{
+//     console.log("Button Clicked");
+//     alert("Button Clicked");
+// });  
+
+// document.body.append(button);
+
+
+// const list = document.createElement("ul");
+
+// const item1 = document.createElement("li");
+// item1.textContent="Pizza";
+// item1.classList.add("items");
+
+// const item2 = document.createElement("li");
+// item2.textContent="Burger";
+// item2.classList.add("items");
+
+// const item3 = document.createElement("li");
+// item3.textContent="Sandwich";
+// item3.classList.add("items");
+
+// const item4 = document.createElement("li");
+// item4.textContent="Pasta";
+// item4.classList.add("items");
+
+// document.body.append(item1,item2,item3,item4);
+
+// const items = document.getElementsByClassName("items");
+
+// function select(event){
+//     if(item==="Pizza"){
+//        console.log("price:"+250);
+//     }
+//     else if(item==="Burger"){
+//         console.log("price:"+180);
+//     }
+//     else if(item==="Sandwich"){
+//         console.log("price:"+170);
+//     }
+//     else if(item==="Pasta"){
+//         console.log("price:"+200);
+//     }
+// }
+
+
+// for(const item of items){
+// item.addEventListener('click',select);
+// }
+// 
+////////////////////////////////
+
+// const list = document.createElement("ul");
+
+// const item1 = document.createElement("li");
+// item1.textContent = "Pizza";
+// item1.classList.add("items");
+
+// const item2 = document.createElement("li");
+// item2.textContent = "Burger";
+// item2.classList.add("items");
+
+// const item3 = document.createElement("li");
+// item3.textContent = "Sandwich";
+// item3.classList.add("items");
+
+// const item4 = document.createElement("li");
+// item4.textContent = "Pasta";
+// item4.classList.add("items");
+
+// document.body.append(item1, item2, item3, item4);
+
+// // Get all elements
+// const items = document.getElementsByClassName("items");
+
+// function select(event) {
+//     // Get the text of the clicked element
+//     const item = event.target.textContent;
+
+//     if (item === "Pizza") {
+//         console.log("price:" + 250);
+//     }
+//     else if (item === "Burger") {
+//         console.log("price:" + 180);
+//     }
+//     else if (item === "Sandwich") {
+//         console.log("price:" + 170);
+//     }
+//     else if (item === "Pasta") {
+//         console.log("price:" + 200);
+//     }
+// }
+
+// for (const item of items) {
+//     item.addEventListener("click", select);
+// }
+
+
+const fruits = ["Apple","Mango","Orange","Grapes","Kiwi"];
+console.log(fruits);
+
+console.log(fruits[0]);
+console.log(fruits[4]);
+
+fruits.push("pineapple");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.forEach((fruits)=>{
+    console.log(fruits);
+})
+
