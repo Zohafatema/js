@@ -1664,19 +1664,74 @@
 // }
 
 
-const fruits = ["Apple","Mango","Orange","Grapes","Kiwi"];
-console.log(fruits);
+// Arrays
 
-console.log(fruits[0]);
-console.log(fruits[4]);
+// const fruits = ["Apple","Mango","Orange","Grapes","Kiwi"];
+// console.log(fruits);
 
-fruits.push("pineapple");
-console.log(fruits);
+// console.log(fruits.length-1);
+// console.log(fruits[4]);
 
-fruits.pop();
-console.log(fruits);
+// fruits.push("pineapple");
+// console.log(fruits);
 
-fruits.forEach((fruits)=>{
-    console.log(fruits);
-})
+// fruits.pop();
+// console.log(fruits);
 
+// fruits.forEach((fruits)=>{
+    // console.log(fruits);
+
+
+
+// console.log(fruits.length);
+
+// function check(fruits){
+//     if(fruits==="apple"){
+//     console.log("apple:->" +yes);
+// }
+// }
+// check();
+// fruits.
+
+
+
+// if (fruits.includes("Apple")){
+//     console.log("apple");
+    
+// }
+
+
+// Objects
+
+const student={
+    name:"Rohit",
+    age:24,
+    marks:90
+};
+console.log(student);
+student.course="BCS"
+console.log(student);
+
+delete student.age;
+console.log(student);
+
+// object.key(student).lenght;
+// console.log(student);
+
+
+
+for(let key in student){
+    console.log(student[key]);
+}
+
+const obj1={
+    name:"Mohit",
+    age:25,
+    marks:89,
+    function check(){
+        if(marks + 89/2);
+          
+    }
+}
+
+check();
