@@ -1727,11 +1727,11 @@ for(let key in student){
 const obj1={
     name:"Mohit",
     age:25,
-    marks:89,
-    function check(){
-        if(marks + 89/2);
-          
-    }
+    marks:
 }
 
-check();
+const total =0;
+const arr=[20,40,30];
+
+
+
