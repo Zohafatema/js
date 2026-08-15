@@ -1724,14 +1724,13 @@ for(let key in student){
     console.log(student[key]);
 }
 
-const obj1={
-    name:"Mohit",
-    age:25,
-    marks:
-}
+// const obj1={
+//     name:"Mohit",
+//     age:25,
+//     marks:
+// }
 
-const total =0;
-const arr=[20,40,30];
+// const total =0;
+// const arr=[20,40,30];
 
 
-objects
