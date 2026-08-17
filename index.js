@@ -1733,4 +1733,5 @@ for(let key in student){
 // const total =0;
 // const arr=[20,40,30];
 
+// const arr=[20,40,30];
 
