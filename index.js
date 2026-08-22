@@ -1703,26 +1703,26 @@
 
 // Objects
 
-const student={
-    name:"Rohit",
-    age:24,
-    marks:90
-};
-console.log(student);
-student.course="BCS"
-console.log(student);
+// const student={
+//     name:"Rohit",
+//     age:24,
+//     marks:90
+// };
+// console.log(student);
+// student.course="BCS"
+// console.log(student);
 
-delete student.age;
-console.log(student);
+// delete student.age;
+// console.log(student);
 
 // object.key(student).lenght;
 // console.log(student);
 
 
 
-for(let key in student){
-    console.log(student[key]);
-}
+// for(let key in student){
+//     console.log(student[key]);
+// }
 
 // const obj1={
 //     name:"Mohit",
@@ -1735,3 +1735,59 @@ for(let key in student){
 
 // const arr=[20,40,30];
 
+// const student={
+//   name:"Rohit",
+//   age:20,
+//   marks:[90,90,90,90,90]
+// }
+
+// function calculateGrade(student){
+//     let total=0;
+//     for(i=0;i>student.marks.length;i++){
+//         total=+student.marks[i];}
+//     let avg=total/student.marks.length;
+//     let grade;
+//     if(avg>=90){
+//         grade="A";
+//     }
+//     else if(avg>=80){
+//          grade="B";
+//     }
+//     else if(avg>=70){
+//          grade="C";
+//     }
+//     else if(avg>=60){
+//          grade="D";
+//     }
+//     else{
+//         grade="fail";
+//     }
+//     console.log(avg);
+//     console.log(grade);
+// }
+// calculateGrade(student);
+
+
+
+
+// async function functionName() {
+
+//     await new Promise(resolve => setTimeout(resolve, 2000));
+//     console.log("Hello");
+// }
+
+// functionName(); 
+
+// async function greeting() {
+//   try {
+//     const result = await new Promise(reject =>
+//       setTimeout(() => reject("Hello World"), 1000)
+//     );
+
+//     console.log(result);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// greeting();
