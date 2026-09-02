@@ -1784,10 +1784,10 @@
 //       setTimeout(() => reject("Hello World"), 1000)
 //     );
 
-    console.log(result);
-  } catch (error) {
-    console.log("Error", error);
-  }
-}
+//     console.log(result);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
 
-greeting();
+// greeting();
